@@ -1,0 +1,1 @@
+web gunicorn RitmoUrbano-Ok.wsgi:application --log-file -
