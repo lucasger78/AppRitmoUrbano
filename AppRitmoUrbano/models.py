@@ -21,7 +21,7 @@ class Alumno(models.Model):
 class Profesor(models.Model):
     
     
-    imagen = models.ImageField(upload_to='media\media\profesores', null=True, blank = True)
+    imagen = models.ImageField(upload_to='media/profesores', null=True, blank = True)
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
     curso = models.CharField(max_length=40)
@@ -37,7 +37,7 @@ class Curso(models.Model):
     
     imagen = models.ImageField(upload_to='media/cursos', null=True, blank = True)
     clase = models.CharField(max_length=40)
-    profesor = models.CharField(max_length=40)
+    profesor = models.CharField(max_length=200)
     dia = models.CharField(max_length=40)
     horario = models.TimeField()
     observaciones = models.TextField()

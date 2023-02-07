@@ -42,7 +42,7 @@ class Cursoadmin(ImportExportModelAdmin, admin.ModelAdmin):
      list_display = ["clase", "profesor"]
      list_editable = ["profesor"]
      search_fields = ["clase", "profesor"]
-     list_per_page = 5
+     list_per_page = 6
      resourse_class = CursoResource
      
 class Contactoadmin(ImportExportModelAdmin, admin.ModelAdmin):
